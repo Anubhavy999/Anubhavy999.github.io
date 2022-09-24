@@ -1,0 +1,60 @@
+<html>
+	<style>
+		.first,.second {
+  background-color: bisque;
+  text-align: center;
+  width: 1200px;
+  padding: 50px;
+  margin: 20px;
+}
+.third{
+  background-color: bisque;
+  text-align: center;
+  width: 1170px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+	</style>
+<body>
+      <div class="First">
+      <h1>Anubhav Yadav</h1>
+      <p>Registration_num:202000516</p>
+        <label for="Semester">Choose the Semester:</label>
+    
+    <select name="Semester" id="Semester">
+      <option value="First">First</option>
+      <option value="Second">Second</option>
+      <option value="Third">Third</option>
+      <option value="Fourth">Fourth</option>
+      <option value="Fifth">Fifth</option>
+      <option value="Sixth">Sixth</option>
+      <option value="Seventh">Seventh</option>
+      <option value="Eighth">Eighth</option>
+    </select>
+        </div>
+        <div class="Second">
+            <p>Favorite Person</p>
+            <img onmouseover="largePic(this)"onmouseout="normPic(this)"
+            src="C:\Users\CSE\mean-sec-b\basics\ratan tata.jpg"alt="Favorite Person" width="320px"height="180px">
+            <script>
+                function largePic(x){
+                    x.style.width="640px"
+                    x.style.height="360px"
+                }
+                function normPic(x){
+                    x.style.width="320px"
+                    x.style.height="240px"
+                }
+                function changeName(){
+                    let c=document.getElementById("demo");
+                    c.innerHTML="<h1>Ratan Tata</h1>"
+                }
+                </script>
+            <p onmouseover="changeName()" id="demo">Ratan Tata</p>
+            </div>
+        <div class="Third">
+            <p>Email id: anubhav_202000516@smit.smu.edu.in</p>
+            </div>
+    </body>
+    </html>
